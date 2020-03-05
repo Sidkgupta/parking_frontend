@@ -16,7 +16,7 @@ pipeline {
             stage('Deploy'){
                 steps{
                     sh 'cp -r $WORKSPACE/build /var/workspace'
-                    sh 'curl -u admin:admin http://13.232.247.70:8080/manager/reload?path=/build'
+                    sh 'curl -u admin:admin http://13.232.229.93:8080/manager/reload?path=/build'
                 }
             }
             }
